@@ -81,7 +81,7 @@ END
 		<div id="feature">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-7">
 						<!-- anchor !-->
 						<a id="eval" href="#"></a>
 						<h2>Eval</h2>
@@ -129,7 +129,7 @@ END
 {% endhighlight %}
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-5">
 						<h2>Extend SQL</h2>
 						<hr class="m-y-md" />
 						<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
