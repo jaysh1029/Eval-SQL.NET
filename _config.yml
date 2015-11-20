@@ -1,1 +1,4 @@
+gems:
+  - jekyll-sitemap
 highlighter: pygments
+
