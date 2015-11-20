@@ -186,8 +186,6 @@ END
 						</p>
 						<p>
 							PRO License starting at <span class="text-bold text-green">ONLY $299</span><span style="text-decoration:line-through">$599</span>
-							<br />
-							<span class="text-muted">+$100/Additional developer seat <span class="text-italic">(Regular: $200)</span></span>
 						</p>
 						
 						<hr class="m-y-md" />
@@ -234,11 +232,10 @@ END
 								<input type="hidden" name="on0" value="Seats">
 								<select name="os0" class="form-control">
 									<option value="1 seat">Eval SQL.NET $299 (1 seat)</option>
-									<option value="2 seats">Eval SQL.NET $399 (2 seats)</option>
-									<option value="3 seats">Eval SQL.NET $499 (3 seats)</option>
-									<option value="4 seats">Eval SQL.NET $599 (4 seats)</option>
-									<option value="5-9 seats">Eval SQL.NET $699 (5-9 seats)</option>
-									<option value="10-15 seats">Eval SQL.NET $899 (10-15 seats)</option>
+									<option value="2-4 seats">Eval SQL.NET $449 (2-4 seats)</option>
+									<option value="5-9 seats">Eval SQL.NET $599 (5-9 seats)</option>
+									<option value="10-14 seats">Eval SQL.NET $749 (10-14 seats)</option>
+									<option value="15-19 seats">Eval SQL.NET $899 (15-19 seats)</option>
 								</select> 
 							</fieldset>
 							<div class="checkbox">
