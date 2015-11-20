@@ -9,7 +9,6 @@ layout: post
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="description" content="Evaluate C# code and expression in T-SQL stored procedure, function and trigger">
 		<meta name="keywords" content=".NET, dotnet, C#, CSharp, VB, Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime, Stored Procedure, Procedure, Function, Trigger, SQL">
-		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
 		<title>Evaluate C# code and expression in T-SQL stored procedure, function and trigger</title>
 		<link rel="icon" type="image/png" href="http://eval-sql.net/images/logo.png">
 		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css">
