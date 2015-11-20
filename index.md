@@ -169,8 +169,11 @@ END
 				</div>
 			</div>
 		</div>
-
-<!-- pricing !-->
+		
+		<!-- anchor !-->
+		<a id="pro" href="#"></a>
+		
+		<!-- pricing !-->
 		<div id="pricing">
 			<div class="container">
 				<div class="row">
