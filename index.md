@@ -4,6 +4,7 @@ layout: post
 
 <html lang="en">
 	<head>
+	<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
