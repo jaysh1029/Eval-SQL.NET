@@ -226,7 +226,7 @@ END
 						
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" onsubmit="return purchase_validate()">
 							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="PW79CTHBQFBZC">
+							<input type="hidden" name="hosted_button_id" value="H8RME3A5PQ5V6">
 							<input type="hidden" name="currency_code" value="USD">
 							<fieldset class="form-group">
 								<input type="hidden" name="on0" value="Seats">
