@@ -35,6 +35,11 @@ layout: post
 			</div>
 		</div>
 		
+		<!-- announcement !-->
+		<div id="announcement" class="text-center">
+			Stable version available on December 01 2015
+		</div>
+		
 		<!-- header !-->
 		<header>
 			<div class="container">
@@ -450,6 +455,13 @@ header {
 	border-bottom: 1px solid #111;
 	border-top: 1px solid #333;
 	padding: 40px 0px;
+}
+#announcement {
+	background-color: #c00;
+	color: #f1f1f1;
+	font-weight: 700;
+	font-style: italic;
+	padding: 5px; 0px;
 }
 #feature {
     background: -moz-linear-gradient(top, #ddd, #f2f2f2);
