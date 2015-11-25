@@ -53,7 +53,7 @@ layout: post
 								<div class="lead">
 									<a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
 									<a href="https://github.com/zzzprojects/Eval-SQL.NET" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
-									<p class="text-muted">* FREE Version - up to 50 characters</p>						
+									<p class="text-muted">* FREE Version limited to 50 characters</p>						
 								</div>
 							</div>
 						</div>
@@ -198,7 +198,7 @@ END
 						</p>
 						
 						<hr class="m-y-md" />
-						<p>With the free version comes a month long trial of the pro license to let you evaluate all its functonalities without limits.</p>					
+						<p>Every month, a new monthly trial of the PRO Version is available to let you evaluate all its features without limitations.</p>					
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
