@@ -253,7 +253,7 @@ END
 								</label>
 							</div>
 							<button type="submit" class="btn btn-success btn-lg"><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></button>
-							<div><br />* Contact us for invoice or payment method alternative</div>
+							<div><br />* Contact us for invoice or payment method alternative.</div>
 						</form>					
 					</div>
 				</div>
