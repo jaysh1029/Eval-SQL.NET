@@ -62,14 +62,15 @@ layout: post
 						<div class="card">
 							<div class="card-block card-code">
 {% highlight sql %}
-CREATE PROCEDURE [dbo].[select_formula]
+CREATE PROCEDURE [dbo].[select_pricing]
 AS
 BEGIN
-    SELECT  SQLNET::New('X + Y')
-        .Val('X', ColumnValueX)
-        .Val('Y', ColumnValueY)
+    -- SELECT [FormattedTotalPrice] FROM TableItems
+    SELECT  SQLNET::New('(X*Y).ToString("$#.00")')
+        .Val('X', UnitPrice)
+        .Val('Y', Quantity)
         .Eval()
-    FROM TableFormula
+    FROM TableItems
 END
 {% endhighlight %}	
 							</div>
