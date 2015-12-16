@@ -236,7 +236,7 @@ END
 								<input type="hidden" name="on0" value="Seats">
 								<select name="os0" class="form-control">
 									<option value="1 seat">Eval SQL.NET $299 (1 seat)</option>
-									<option value="2-4 seats">Eval SQL.NET $399 (2-4 seats)</option>
+									<option value="2-4 seats" selected>Eval SQL.NET $399 (2-4 seats)</option>
 									<option value="5-9 seats">Eval SQL.NET $499 (5-9 seats)</option>
 									<option value="10-14 seats">Eval SQL.NET $599 (10-14 seats)</option>
 									<option value="15-19 seats">Eval SQL.NET $699 (15-19 seats)</option>
