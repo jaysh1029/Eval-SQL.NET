@@ -598,7 +598,7 @@ header .card .card-code .highlight pre {
 }
 
 #feature .hidden-lg-down .btn  {
-	margin-top: 0px;
+	margin-top: 10px;
 }
 
 #feature .feature-list li {
