@@ -598,7 +598,8 @@ header .card .card-code .highlight pre {
 	margin-top: 40px;
 }
 #feature .feature-list li {
-	padding-bottom: 5px;
+	padding-bottom: 3px;
+	padding-top: 3px;
 }
 
 @media (min-width: 62em) {
