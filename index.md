@@ -606,7 +606,7 @@ header .card .card-code .highlight pre {
 	margin-top: 10px;
 }
 #feature .feature-body {
-	padding-left: 30px;
+	padding-left: 60px;
 }
 #feature .feature-list li {
 	padding-bottom: 3px;
