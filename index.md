@@ -184,15 +184,6 @@ END
 						<hr class="m-y-md" />
 						<p>Become a <span class="text-bold text-green">PRO</span> now and start saving time and money!</p>
 						<p>Thousands of <span class="text-bold">development hours</span> and thousands of <span class="text-bold">unit tests</span> to make Eval Expression.NET the best and most robust C# expression evaluator.</p>
-						<p>
-							<i class="fa fa-gift fa-5x text-green"></i><span style="font-size:40px;" class="text-green">50% off</span>
-							<br />
-							<span class="text-muted">*Hurry! This offer ends January 1st 2016.</span>
-						</p>
-						<p>
-							PRO License starting at <span class="text-bold text-green">ONLY $299</span><span style="text-decoration:line-through">$599</span>
-						</p>
-						
 						<hr class="m-y-md" />
 						<p>Every month, a new monthly trial of the PRO Version is available to let you evaluate all its features without limitations.</p>					
 					</div>
@@ -236,11 +227,11 @@ END
 							<fieldset class="form-group">
 								<input type="hidden" name="on0" value="Seats">
 								<select name="os0" class="form-control">
-									<option value="1 seat">Eval SQL.NET $299 (1 seat)</option>
-									<option value="2-4 seats" selected>Eval SQL.NET $399 (2-4 seats)</option>
-									<option value="5-9 seats">Eval SQL.NET $499 (5-9 seats)</option>
-									<option value="10-14 seats">Eval SQL.NET $599 (10-14 seats)</option>
-									<option value="15-19 seats">Eval SQL.NET $699 (15-19 seats)</option>
+									<option value="1 seat">Eval SQL.NET $599 (1 seat)</option>
+									<option value="2-4 seats" selected>Eval SQL.NET $799 (2-4 seats)</option>
+									<option value="5-9 seats">Eval SQL.NET $999 (5-9 seats)</option>
+									<option value="10-14 seats">Eval SQL.NET $1199 (10-14 seats)</option>
+									<option value="15-19 seats">Eval SQL.NET $1399 (15-19 seats)</option>
 								</select> 
 							</fieldset>
 							<div class="checkbox">
