@@ -89,8 +89,10 @@ END
 						<h2>Eval</h2>
 						<hr class="m-y-md" />
 						<div class="block-code">
-							<h3>Runtime Evaluation</h3>
-							<p>Evaluate and execute the code or expression.</p>
+							<div class="row">
+								<div class="col-lg-6">
+									<h3>Runtime Evaluation</h3>
+									<p>Evaluate and execute the code or expression.</p>
 {% highlight sql %}
 CREATE PROCEDURE [dbo].[select_formula]
 AS
@@ -102,9 +104,12 @@ BEGIN
     FROM TableFormula
 END
 {% endhighlight %}
-							<hr class="m-y-md" />
-							<h3>Regex</h3>
-							<p>Evaluate and execute the code or expression.</p>
+								</div>
+							<div>
+							<div class="col-lg-6">
+								<div>
+									<h3>Regex</h3>
+									<p>Evaluate and execute the code or expression.</p>
 {% highlight sql %}
 CREATE PROCEDURE [dbo].[select_where_regex_filter]
 AS
@@ -118,9 +123,12 @@ BEGIN
 	.Eval() = 1
 END
 {% endhighlight %}
-							<hr class="m-y-md" />
-							<h3>Result Set</h3>
-							<p>Evaluate and execute the code or expression.</p>
+								</div>
+							<div>
+							<div class="row">
+								<div class="col-lg-6">
+									<h3>Result Set</h3>
+									<p>Evaluate and execute the code or expression.</p>
 {% highlight sql %}
 CREATE PROCEDURE [dbo].[select_directiry_files] @PATH VARCHAR(255)
 AS
@@ -135,6 +143,23 @@ BEGIN
     EXEC SQLNET_EvalResultSet @sqlnet
 END
 {% endhighlight %}
+								</div>
+								<div class="col-lg-6">
+									<h3>Runtime Evaluation</h3>
+									<p>Evaluate and execute the code or expression.</p>
+{% highlight sql %}
+CREATE PROCEDURE [dbo].[select_formula]
+AS
+BEGIN
+    SELECT  SQLNET::New('X + Y')
+        .Val('X', ColumnValueX)
+        .Val('Y', ColumnValueY)
+        .Eval()
+    FROM TableFormula
+END
+{% endhighlight %}
+								</div>
+							</div>
 						</div>
 						<div class="text-center hidden-lg-up">
 							<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
