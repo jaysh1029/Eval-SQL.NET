@@ -138,7 +138,7 @@ END
 						<h2>Extend SQL</h2>
 						<hr class="m-y-md" />
 						<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
-						<ul>
+						<ul class="feature-list">
 							<li>Access to .NET objects
 								<ul>
 									<li>Math</li>
@@ -167,8 +167,10 @@ END
 								</ul>
 							</li>
 						</ul>
-						<div class="center-block text-center">
-							<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
+						<div class="center-block">
+							<div class="text-center">
+								<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -595,6 +597,10 @@ header .card .card-code .highlight pre {
 #feature .btn {
 	margin-top: 40px;
 }
+#feature .feature-list li {
+	padding-bottom: 5px;
+}
+
 @media (min-width: 62em) {
 	#feature .row .col-lg-6:first-child {
 		padding-right: 45px;
