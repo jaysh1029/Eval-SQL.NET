@@ -311,10 +311,10 @@ END
 							<div class="card-block">
 								<h4 class="card-title">Forum</h4>
 							</div>
-							<a href="http://zzzprojects.uservoice.com/forums/328452-eval-sql-net" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
+							<a href="https://github.com/zzzprojects/Eval-SQL.NET/issues" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Visit the forum to propose new features or to discuss about the library.</p>
-								<a href="http://zzzprojects.uservoice.com/forums/328452-eval-sql-net" target="_blank">Forum</a>
+								<a href="https://github.com/zzzprojects/Eval-SQL.NET/issues" target="_blank">Forum</a>
 							</div>
 						</div>
 					</div>
