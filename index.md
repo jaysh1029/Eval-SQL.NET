@@ -137,7 +137,7 @@ END
 					<div class="col-lg-5">
 						<h2>Extend SQL</h2>
 						<hr class="m-y-md" />
-						<div style="padding-left: 20px;">
+						<div style="padding-left: 30px;">
 							<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
 							<div class="feature-list">
 								<span class="font-weight-bold">Access to .NET objects</span>
