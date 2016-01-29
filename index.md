@@ -112,7 +112,8 @@ BEGIN
 
     SELECT  *
     FROM    [FileTable]
-    WHERE   @sqlnet_filterFile.SetValue('FILEPATH', FilePathColumn).Eval() = 1
+    WHERE   @sqlnet_filterFile.SetValue('FILEPATH', FilePathColumn)
+	.Eval() = 1
 END
 {% endhighlight %}
 							<h3>Result Set</h3>
@@ -122,7 +123,8 @@ AS
 BEGIN
     DECLARE @sqlnet SQLNET = SQLNET::New('
     var dir = new DirectoryInfo(PATH);
-    return dir.GetFiles("*.*").Select(x => x.FullName).OrderBy(x => x).ToList();')
+    return dir.GetFiles("*.*").Select(x => x.FullName)
+			  .OrderBy(x => x).ToList();')
     .Val('PATH', @PATH)
 
     /* SELECT * FROM [path_files] ORDER BY path */
