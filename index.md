@@ -91,6 +91,7 @@ END
 						<div class="block-code">
 							<p>Evaluate and execute the code or expression.</p>
 							<h3>Runtime Evaluation</h3>
+							Evaluate and execute the code or expression.
 {% highlight sql %}
 CREATE PROCEDURE [dbo].[select_formula]
 AS
@@ -103,6 +104,7 @@ BEGIN
 END
 {% endhighlight %}
 							<h3>Regex</h3>
+							Evaluate and execute the code or expression.
 {% highlight sql %}
 CREATE PROCEDURE [dbo].[select_where_regex_filter]
 AS
@@ -117,6 +119,7 @@ BEGIN
 END
 {% endhighlight %}
 							<h3>Result Set</h3>
+							Evaluate and execute the code or expression.
 {% highlight sql %}
 CREATE PROCEDURE [dbo].[select_directiry_files] @PATH VARCHAR(255)
 AS
@@ -592,7 +595,7 @@ header .card .card-code .highlight pre {
 }
 #feature h3 {
 	letter-spacing: 1px;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 700;
 }
 #feature .btn {
