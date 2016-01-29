@@ -137,35 +137,37 @@ END
 					<div class="col-lg-5">
 						<h2>Extend SQL</h2>
 						<hr class="m-y-md" />
-						<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
-						<div class="feature-list">
-							<span class="font-weight-bold">Access to .NET objects</span>
-								<ul>
-									<li>Math</li>
-									<li>Regex</li>
-									<li>String.Format</li>
-								</ul>
-							<span class="font-weight-bold">Evaluate expression at runtime</span>
-								<ul>
-									<li>Use column value as code</li>
-									<li>Use column value as parameter</li>
-									<li>Perform IO Operation</li>
-								</ul>
-							<span class="font-weight-bold">Replace xp_cmdshell with C# Syntax</span>
-								<ul>
-									<li>DirectoryInfo</li>
-									<li>FileInfo</li>
-									<li>Impersonate</li>
-								</ul>
-							<span class="font-weight-bold">Function Improvment</span>
-								<ul>
-									<li>Modify Table State</li>
-									<li>Try/Catch Error Handling</li>
-								</ul>
-						</div>
-						<div class="center-block">
-							<div class="text-center">
-								<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
+						<div style="padding-left: 20px;">
+							<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
+							<div class="feature-list">
+								<span class="font-weight-bold">Access to .NET objects</span>
+									<ul>
+										<li>Math</li>
+										<li>Regex</li>
+										<li>String.Format</li>
+									</ul>
+								<span class="font-weight-bold">Evaluate expression at runtime</span>
+									<ul>
+										<li>Use column value as code</li>
+										<li>Use column value as parameter</li>
+										<li>Perform IO Operation</li>
+									</ul>
+								<span class="font-weight-bold">Replace xp_cmdshell with C# Syntax</span>
+									<ul>
+										<li>DirectoryInfo</li>
+										<li>FileInfo</li>
+										<li>Impersonate</li>
+									</ul>
+								<span class="font-weight-bold">Function Improvment</span>
+									<ul>
+										<li>Modify Table State</li>
+										<li>Try/Catch Error Handling</li>
+									</ul>
+							</div>
+							<div class="center-block">
+								<div class="text-center">
+									<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
