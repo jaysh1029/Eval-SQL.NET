@@ -208,11 +208,6 @@ END
 									<td><i class="fa fa-check-square-o fa-2x"></i></td>
 								</tr>
 								<tr>
-									<th>Royalty-Free</th>
-									<td><i class="fa fa-times fa-2x"></i></td>
-									<td><i class="fa fa-check-square-o fa-2x"></i></td>
-								</tr>
-								<tr>
 									<th>Support & Upgrades (1 year)</th>
 									<td><i class="fa fa-times fa-2x"></i></td>
 									<td><i class="fa fa-check-square-o fa-2x"></i></td>
