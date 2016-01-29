@@ -83,7 +83,7 @@ END
 		<div id="feature">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-lg-12">
 						<!-- anchor !-->
 						<a id="eval" href="#"></a>
 						<h2>Eval</h2>
@@ -140,7 +140,7 @@ END
 							<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
 						</div>
 					</div>
-					<div class="col-lg-5">
+					<div class="col-lg-12">
 						<h2>Extend SQL</h2>
 						<hr class="m-y-md" />
 						<div class="feature-body">
