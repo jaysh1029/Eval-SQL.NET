@@ -191,8 +191,8 @@ END
 								<li>Any C# code but within T-SQL!</li>
 							</ul>
 						<hr class="m-y-md" />
-						<p>Every month, a new trial of the PRO version is available to let you evaluate all its features without limitations.</p>	
 						<p class="free-trial"><a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank">FREE trial</a></p>
+						<p>Every month, a new trial of the PRO version is available to let you evaluate all its features without limitations.</p>	
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
