@@ -91,7 +91,7 @@ END
 						<div class="block-code">
 							<p>Evaluate and execute the code or expression.</p>
 							<h3>Runtime Evaluation</h3>
-							Evaluate and execute the code or expression.
+							<p>Evaluate and execute the code or expression.</p>
 {% highlight sql %}
 CREATE PROCEDURE [dbo].[select_formula]
 AS
@@ -104,7 +104,7 @@ BEGIN
 END
 {% endhighlight %}
 							<h3>Regex</h3>
-							Evaluate and execute the code or expression.
+							<p>Evaluate and execute the code or expression.</p>
 {% highlight sql %}
 CREATE PROCEDURE [dbo].[select_where_regex_filter]
 AS
@@ -119,7 +119,7 @@ BEGIN
 END
 {% endhighlight %}
 							<h3>Result Set</h3>
-							Evaluate and execute the code or expression.
+							<p>Evaluate and execute the code or expression.</p>
 {% highlight sql %}
 CREATE PROCEDURE [dbo].[select_directiry_files] @PATH VARCHAR(255)
 AS
