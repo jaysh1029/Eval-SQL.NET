@@ -102,6 +102,7 @@ BEGIN
     FROM TableFormula
 END
 {% endhighlight %}
+							<hr class="m-y-md" />
 							<h3>Regex</h3>
 							<p>Evaluate and execute the code or expression.</p>
 {% highlight sql %}
@@ -117,6 +118,7 @@ BEGIN
 	.Eval() = 1
 END
 {% endhighlight %}
+							<hr class="m-y-md" />
 							<h3>Result Set</h3>
 							<p>Evaluate and execute the code or expression.</p>
 {% highlight sql %}
