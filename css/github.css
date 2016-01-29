@@ -61,6 +61,7 @@
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 .highlight .language-sql .k { color: #0000ff; font-weight: bold } /* Keyword */
+.highlight .language-sql .cm { color: #00ff00;} /* Keyword */
 
 pre {
     counter-reset: line-numbering;
