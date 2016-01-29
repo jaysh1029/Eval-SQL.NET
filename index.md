@@ -89,7 +89,6 @@ END
 						<h2>Eval</h2>
 						<hr class="m-y-md" />
 						<div class="block-code">
-							<p>Evaluate and execute the code or expression.</p>
 							<h3>Runtime Evaluation</h3>
 							<p>Evaluate and execute the code or expression.</p>
 {% highlight sql %}
