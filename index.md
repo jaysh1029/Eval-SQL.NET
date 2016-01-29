@@ -192,9 +192,7 @@ END
 							</ul>
 						<hr class="m-y-md" />
 						<p>Every month, a new trial of the PRO version is available to let you evaluate all its features without limitations.</p>	
-						<p class="free-trial">
-							<a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank">Download FREE trial</a>
-						</p>
+						<p class="free-trial"><a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank">Download FREE trial</a></p>
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
@@ -243,8 +241,7 @@ END
 									<input id="agree_agreement" type="checkbox">I have read and agree to the <a href="http://www.zzzprojects.com/license-agreement/" target="_blank">License Agreement</a>.
 								</label>
 							</div>
-							<div class="container">
-								<button type="submit" class="btn btn-success btn-lg"><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></button>					
+							<button type="submit" class="btn btn-success btn-lg"><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></button>
 							<div><br />* Contact us for invoice or payment method alternative.</div>
 						</form>					
 					</div>
