@@ -143,7 +143,7 @@ END
 					<div class="col-lg-4 col-lg-push-1">
 						<h2>Extend SQL</h2>
 						<hr class="m-y-md" />
-						<div class="feature-body">
+						<div>
 							<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
 							<div class="feature-list">
 								<span class="font-weight-bold">Access to .NET objects</span>
@@ -604,9 +604,6 @@ header .card .card-code .highlight pre {
 }
 #feature .hidden-lg-down .btn  {
 	margin-top: 10px;
-}
-#feature .feature-body {
-	/*padding-left: 60px;*/
 }
 #feature .feature-list li {
 	padding-bottom: 3px;
