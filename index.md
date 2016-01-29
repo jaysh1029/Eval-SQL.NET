@@ -83,7 +83,7 @@ END
 		<div id="feature">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12">
+					<div class="col-lg-7">
 						<!-- anchor !-->
 						<a id="eval" href="#"></a>
 						<h2>Eval</h2>
