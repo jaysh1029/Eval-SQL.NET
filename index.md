@@ -130,7 +130,7 @@ BEGIN
 END
 {% endhighlight %}
 						</div>
-						<div class="text-center hidden-lg-up">
+						<div class="center text-center hidden-lg-up">
 							<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
 						</div>
 					</div>
