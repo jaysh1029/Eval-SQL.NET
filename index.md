@@ -186,7 +186,7 @@ END
 						<p>Thousands of <span class="text-bold">development hours</span> and thousands of <span class="text-bold">unit tests</span> to make Eval Expression.NET the best and most robust C# expression evaluator.</p>
 						<hr class="m-y-md" />
 						<p>Every month, a new monthly trial of the PRO Version is available to let you evaluate all its features without limitations.</p>	
-						<p><a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank">Download FREE trial</a></p>
+						<p class="free-trial"><a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank">Download FREE trial</a></p>
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
@@ -598,6 +598,10 @@ header .card .card-code .highlight pre {
 /* pricing */
 #pricing h2 {
 	margin-bottom: -10px;
+}
+#pricing .free-trial a {
+	font-size: 20px;
+	font-weight: 700;
 }
 #pricing .table thead th {
 	text-align: center;
