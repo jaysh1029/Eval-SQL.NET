@@ -83,41 +83,7 @@ END
 		<div id="feature">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5">
-						<h2>Extend SQL</h2>
-						<hr class="m-y-md" />
-						<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
-						<ul>
-							<li>Access to .NET objects
-								<ul>
-									<li>Math</li>
-									<li>Regex</li>
-									<li>String.Format</li>
-								</ul>
-							</li>
-							<li>Evaluate expression at runtime
-								<ul>
-									<li>Use column value as code</li>
-									<li>Use column value as parameter</li>
-									<li>Perform IO Operation</li>
-								</ul>
-							</li>
-							<li>Replace xp_cmdshell with C# Syntax
-								<ul>
-									<li>DirectoryInfo</li>
-									<li>FileInfo</li>
-									<li>Impersonate</li>
-								</ul>
-							</li>
-							<li>Function Improvment
-								<ul>
-									<li>Modify Table State</li>
-									<li>Try/Catch Error Handling</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-<div class="col-lg-7">
+					<div class="col-lg-7">
 						<!-- anchor !-->
 						<a id="eval" href="#"></a>
 						<h2>Eval</h2>
@@ -164,6 +130,40 @@ BEGIN
 END
 {% endhighlight %}
 						</div>
+					</div>
+					<div class="col-lg-5">
+						<h2>Extend SQL</h2>
+						<hr class="m-y-md" />
+						<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
+						<ul>
+							<li>Access to .NET objects
+								<ul>
+									<li>Math</li>
+									<li>Regex</li>
+									<li>String.Format</li>
+								</ul>
+							</li>
+							<li>Evaluate expression at runtime
+								<ul>
+									<li>Use column value as code</li>
+									<li>Use column value as parameter</li>
+									<li>Perform IO Operation</li>
+								</ul>
+							</li>
+							<li>Replace xp_cmdshell with C# Syntax
+								<ul>
+									<li>DirectoryInfo</li>
+									<li>FileInfo</li>
+									<li>Impersonate</li>
+								</ul>
+							</li>
+							<li>Function Improvment
+								<ul>
+									<li>Modify Table State</li>
+									<li>Try/Catch Error Handling</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="text-center">
