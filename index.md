@@ -192,6 +192,7 @@ END
 							</ul>
 						<hr class="m-y-md" />
 						<p>Every month, a <a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>
+						<hr class="m-y-md hidden-md-up" />
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
