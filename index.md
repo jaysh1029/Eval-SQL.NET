@@ -139,28 +139,28 @@ END
 						<hr class="m-y-md" />
 						<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
 						<ul class="feature-list">
-							<li>Access to .NET objects
+							<li><span class="font-weight-bold">Access to .NET objects</span>
 								<ul>
 									<li>Math</li>
 									<li>Regex</li>
 									<li>String.Format</li>
 								</ul>
 							</li>
-							<li>Evaluate expression at runtime
+							<li><span class="font-weight-bold">Evaluate expression at runtime</span>
 								<ul>
 									<li>Use column value as code</li>
 									<li>Use column value as parameter</li>
 									<li>Perform IO Operation</li>
 								</ul>
 							</li>
-							<li>Replace xp_cmdshell with C# Syntax
+							<li><span class="font-weight-bold">Replace xp_cmdshell with C# Syntax</span>
 								<ul>
 									<li>DirectoryInfo</li>
 									<li>FileInfo</li>
 									<li>Impersonate</li>
 								</ul>
 							</li>
-							<li>Function Improvment
+							<li><span class="font-weight-bold">Function Improvment</span>
 								<ul>
 									<li>Modify Table State</li>
 									<li>Try/Catch Error Handling</li>
