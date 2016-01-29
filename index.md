@@ -164,10 +164,11 @@ END
 										<li>Try/Catch Error Handling</li>
 									</ul>
 							</div>
-							<div class="center-block">
-								<div class="text-center">
-									<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
-								</div>
+							<div class="text-center hidden-lg-down">
+								<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
+							</div>
+							<div class="text-center hidden-lg-up">
+								<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -595,6 +596,11 @@ header .card .card-code .highlight pre {
 #feature .btn {
 	margin-top: 40px;
 }
+
+#feature .hidden-lg-down .btn  {
+	margin-top: 20px;
+}
+
 #feature .feature-list li {
 	padding-bottom: 3px;
 	padding-top: 3px;
