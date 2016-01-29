@@ -14,7 +14,7 @@ layout: post
 		<link rel="icon" type="image/png" href="http://eval-sql.net/images/logo.png">
 		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="/css/github.css">
+		<link rel="stylesheet" type="sutext/css" href="/css/github.css">
 	</head>
 	
 	<body>
@@ -644,7 +644,6 @@ header .card .card-code .highlight pre {
 }
 #support i {
 	color: #0275d8;
-	padding-bottom: 20px;
 }
 
 /* product */
