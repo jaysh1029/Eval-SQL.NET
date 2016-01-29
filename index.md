@@ -185,6 +185,9 @@ END
 						<p>Become a <span class="text-bold text-green">PRO</span> now and start saving time and money!</p>
 						<p>Thousands of <span class="text-bold">development hours</span> and thousands of <span class="text-bold">unit tests</span> to make Eval Expression.NET the best and most robust C# expression evaluator.</p>
 						<hr class="m-y-md" />
+						<p>
+							<a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>FREE Trial</span></span></a>
+						</p>
 						<p>Every month, a new monthly trial of the PRO Version is available to let you evaluate all its features without limitations.</p>					
 					</div>
 					<div class="col-lg-6">
