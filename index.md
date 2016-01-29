@@ -105,9 +105,7 @@ BEGIN
 END
 {% endhighlight %}
 								</div>
-							<div>
-							<div class="col-lg-6">
-								<div>
+								<div class="col-lg-6">
 									<h3>Regex</h3>
 									<p>Evaluate and execute the code or expression.</p>
 {% highlight sql %}
@@ -124,7 +122,7 @@ BEGIN
 END
 {% endhighlight %}
 								</div>
-							<div>
+							</div>
 							<div class="row">
 								<div class="col-lg-6">
 									<h3>Result Set</h3>
