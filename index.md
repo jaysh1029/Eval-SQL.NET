@@ -123,6 +123,7 @@ END
 {% endhighlight %}
 								</div>
 							</div>
+							<hr class="m-y-md" />
 							<div class="row">
 								<div class="col-lg-6">
 									<h3>Result Set</h3>
