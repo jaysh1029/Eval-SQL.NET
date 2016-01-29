@@ -182,10 +182,16 @@ END
 					<div class="col-lg-6">
 						<h2>Pricing</h2>
 						<hr class="m-y-md" />
-						<p>Become a <span class="text-bold text-green">PRO</span> now and start saving time and money!</p>
-						<p>Thousands of <span class="text-bold">development hours</span> and thousands of <span class="text-bold">unit tests</span> to make Eval Expression.NET the best and most robust C# expression evaluator.</p>
+							<p>Unlock a new world of possibilities by extending SQL language with C# syntax.</p>
+							<ul>
+								<li>Dynamic arithmetic expression</li>
+								<li>Regular Expression</li>
+								<li>String Interpolation</li>
+								<li>Web Service</li>
+								<li>Any C# code but within T-SQL!</li>
+							</ul>
 						<hr class="m-y-md" />
-						<p>Every month, a new monthly trial of the PRO Version is available to let you evaluate all its features without limitations.</p>	
+						<p>Every month, a new trial of the PRO version is available to let you evaluate all its features without limitations.</p>	
 						<p class="free-trial"><a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank">Download FREE trial</a></p>
 					</div>
 					<div class="col-lg-6">
