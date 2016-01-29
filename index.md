@@ -138,7 +138,7 @@ END
 						<h2>Extend SQL</h2>
 						<hr class="m-y-md" />
 						<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
-						<ul class="feature-list">
+						<div class="feature-list">
 							<span class="font-weight-bold">Access to .NET objects</span>
 								<ul>
 									<li>Math</li>
@@ -162,7 +162,7 @@ END
 									<li>Modify Table State</li>
 									<li>Try/Catch Error Handling</li>
 								</ul>
-						</ul>
+						</div>
 						<div class="center-block">
 							<div class="text-center">
 								<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
