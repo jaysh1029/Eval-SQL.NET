@@ -86,6 +86,8 @@ END
 					<div class="col-lg-7">
 						<!-- anchor !-->
 						<a id="eval" href="#"></a>
+						<h2>Easy to use</h2>
+						<hr class="m-y-md" />
 						<div class="block-code">
 							<h3>Runtime Evaluation</h3>
 							<p>Evaluate and execute the code or expression.</p>
