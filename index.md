@@ -86,8 +86,6 @@ END
 					<div class="col-lg-7">
 						<!-- anchor !-->
 						<a id="eval" href="#"></a>
-						<h2>Eval</h2>
-						<hr class="m-y-md" />
 						<div class="block-code">
 							<h3>Runtime Evaluation</h3>
 							<p>Evaluate and execute the code or expression.</p>
@@ -141,7 +139,7 @@ END
 						</div>
 					</div>
 					<div class="col-lg-4 col-lg-push-1">
-						<h2>Extend SQL</h2>
+						<h2>Main Features</h2>
 						<hr class="m-y-md" />
 						<div>
 							<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
