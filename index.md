@@ -86,7 +86,7 @@ END
 					<div class="col-lg-7">
 						<!-- anchor !-->
 						<a id="eval" href="#"></a>
-						<h2>Getting Started</h2>
+						<h2>Overview</h2>
 						<hr class="m-y-md" />
 						<div class="block-code">
 							<h3>Runtime Evaluation</h3>
