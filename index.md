@@ -592,7 +592,6 @@ header .card .card-code .highlight pre {
 	font-size: 42px;
 	letter-spacing: 4px;
 	padding-top: 60px;
-	text-align: center;
 }
 #feature h3 {
 	letter-spacing: 1px;
