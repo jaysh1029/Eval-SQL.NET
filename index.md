@@ -58,22 +58,17 @@ layout: post
 						<div class="card">
 							<div class="card-block card-code">
 {% highlight sql %}
-DECLARE @tableFormula TABLE
-    (
-      Formula VARCHAR(255) ,
-      X INT ,
-      Y INT ,
-      Z INT
-    )
+-- SELECT 'Hello, String Interpolation! Date: 2016-02-01 Max Value: $2.00'
 
-INSERT  INTO @tableFormula
-VALUES  ( 'x+y*z', 1, 2, 3 ),
-        ( '(x+y)*z', 1, 2, 3 )
-
--- SELECT 7
--- SELECT 9
-SELECT  SQLNET::New(Formula).Val('x', X).Val('y', Y).Val('z', Z).EvalInt()
-FROM    @tableFormula
+SELECT  SQLNET::New('@$"
+Hello, {feature}!
+Date: {DateTime.Now.ToString(format)}
+Max Value: {(x > y ? x : y):C}
+"').Val('feature', 'String Interpolation')
+   .Val('format', 'yyyy-MM-dd')
+   .Val('x', 1)
+   .Val('y', 2)
+   .Eval()
 {% endhighlight %}	
 							</div>
 						</div>
