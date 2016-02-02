@@ -100,10 +100,10 @@ FROM    @tableFormula
 {% highlight sql %}
 CREATE PROCEDURE [dbo].[Select_Switch] @x INT, @y INT, @z INT
 AS
-    BEGIN
-        DECLARE @result INT
+BEGIN
+    DECLARE @result INT
 
-        SET @result = SQLNET::New('
+    SET @result = SQLNET::New('
 switch(x)
 {
     case 1: return y + z;
@@ -113,11 +113,9 @@ switch(x)
 }
    ').Val('x', @x).Val('y', @y).Val('z', @z).EvalInt()
 
-        SELECT  @result
-    END
-
+    SELECT  @result
+END
 GO
-
 -- RETURN 5
 EXEC Select_Switch 1, 2, 3
 -- RETURN -1
@@ -163,9 +161,8 @@ string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 
 var dir = new DirectoryInfo(path);
 return dir.GetFiles("*.*").Select(x => x.FullName)
-                         .OrderBy(x => x)
-						 .ToList();')
-    .Impersonate()
+                          .OrderBy(x => x)
+                         .ToList();').Impersonate()
 
 -- SELECT * FROM DesktopFiles ORDER BY File.Fullname
 EXEC dbo.SQLNET_EvalResultSet @sqlnet
