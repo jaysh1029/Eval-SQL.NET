@@ -167,7 +167,7 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 {% endhighlight %}
 						</div>
 						<div class="text-center hidden-lg-up">
-							<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
+							<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-lg-push-1">
@@ -204,10 +204,10 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 									</ul>
 							</div>
 							<div class="text-center hidden-lg-down">
-								<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
+								<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
 							</div>
 							<div class="text-center hidden-lg-up">
-								<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
+								<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
 							</div>
 						</div>
 					</div>
