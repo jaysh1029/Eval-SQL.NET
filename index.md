@@ -58,6 +58,7 @@ layout: post
 						<div class="card">
 							<div class="card-block card-code">
 {% highlight sql %}
+-- Evaluate dynamically expression
 DECLARE @tableFormula TABLE (
    Formula VARCHAR(255), X INT, Y INT, Z INT
 )
@@ -65,13 +66,14 @@ DECLARE @tableFormula TABLE (
 INSERT  INTO @tableFormula VALUES ('x+y*z', 1, 2, 3 ), 
                                   ('(x+y)*z', 1, 2, 3 )
 
-SELECT SQLNET::New(Formula)
-              .Val('x', X)
-			  .Val('y', Y)
-			  .Val('z', Z).EvalInt()
-FROM @tableFormula
 -- SELECT 7
 -- SELECT 9
+SELECT SQLNET::New(Formula)
+              .Val('x', X)
+              .Val('y', Y)
+              .Val('z', Z).EvalInt()
+FROM @tableFormula
+
 {% endhighlight %}	
 							</div>
 						</div>
