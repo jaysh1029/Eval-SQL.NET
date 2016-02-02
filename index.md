@@ -139,8 +139,8 @@ CREATE FUNCTION [dbo].[fn_Split]
 RETURNS @split TABLE ( item VARCHAR(8000) )
 BEGIN
 	DECLARE @regex_split SQLNET = SQLNET::New('Regex.Split(input, pattern)')
-										 .ValueString('input', @input)
-										 .Val('pattern', @pattern)
+                                         .ValueString('input', @input)
+                                         .Val('pattern', @pattern)
 
 	INSERT  INTO @split
 			SELECT  CAST(Value_1 AS VARCHAR(8000))
