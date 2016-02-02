@@ -58,7 +58,11 @@ layout: post
 						<div class="card">
 							<div class="card-block card-code">
 {% highlight sql %}
--- SELECT 'Hello, String Interpolation! Date: 2016-02-01 Max Value: $2.00'
+/*
+SELECT 'Hello, String Interpolation!
+Date: 2016-02-01
+Max Value: $2.00'
+*/
 
 SELECT  SQLNET::New('@$"
 Hello, {feature}!
