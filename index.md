@@ -162,7 +162,7 @@ string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 var dir = new DirectoryInfo(path);
 return dir.GetFiles("*.*").Select(x => x.FullName)
                           .OrderBy(x => x)
-                         .ToList();').Impersonate()
+                          .ToList();').Impersonate()
 
 -- SELECT * FROM DesktopFiles ORDER BY File.Fullname
 EXEC dbo.SQLNET_EvalResultSet @sqlnet
