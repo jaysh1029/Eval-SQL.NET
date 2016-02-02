@@ -65,7 +65,6 @@ DECLARE @tableFormula TABLE (
 
 INSERT  INTO @tableFormula VALUES ('x+y*z', 1, 2, 3 ), 
                                   ('(x+y)*z', 1, 2, 3 )
-
 -- SELECT 7
 -- SELECT 9
 SELECT SQLNET::New(Formula)
@@ -73,7 +72,6 @@ SELECT SQLNET::New(Formula)
               .Val('y', Y)
               .Val('z', Z).EvalInt()
 FROM @tableFormula
-
 {% endhighlight %}	
 							</div>
 						</div>
