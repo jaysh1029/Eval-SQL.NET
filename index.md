@@ -137,16 +137,16 @@ CREATE FUNCTION [dbo].[fn_Split]
       @pattern VARCHAR(8000) = ','
     )
 RETURNS @split TABLE ( item VARCHAR(8000) )
-    BEGIN
-        DECLARE @regex_split SQLNET = SQLNET::New('Regex.Split(input, pattern)')
-                                             .ValueString('input', @input)
-                                             .Val('pattern', @pattern)
+BEGIN
+	DECLARE @regex_split SQLNET = SQLNET::New('Regex.Split(input, pattern)')
+										 .ValueString('input', @input)
+										 .Val('pattern', @pattern)
 
-        INSERT  INTO @split
-                SELECT  CAST(Value_1 AS VARCHAR(8000))
-                FROM    [dbo].[SQLNET_EvalTVF_1](@regex_split)
-        RETURN
-    END
+	INSERT  INTO @split
+			SELECT  CAST(Value_1 AS VARCHAR(8000))
+			FROM    [dbo].[SQLNET_EvalTVF_1](@regex_split)
+	RETURN
+END
 
 GO
 
@@ -162,7 +162,9 @@ DECLARE @sqlnet SQLNET = SQLNET::New('
 string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 
 var dir = new DirectoryInfo(path);
-return dir.GetFiles("*.*").Select(x => x.FullName).OrderBy(x => x).ToList();')
+return dir.GetFiles("*.*").Select(x => x.FullName)
+                         .OrderBy(x => x)
+						 .ToList();')
     .Impersonate()
 
 -- SELECT * FROM DesktopFiles ORDER BY File.Fullname
