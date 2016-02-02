@@ -58,7 +58,7 @@ layout: post
 						<div class="card">
 							<div class="card-block card-code">
 {% highlight sql %}
--- Evaluate dynamically expression
+-- Evaluate dynamically expression in T-SQL
 DECLARE @tableFormula TABLE (
    Formula VARCHAR(255), X INT, Y INT, Z INT
 )
