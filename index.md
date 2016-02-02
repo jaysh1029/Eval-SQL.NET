@@ -179,28 +179,31 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 						<div>
 							<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
 							<div class="feature-list">
-								<span class="font-weight-bold">Access to .NET objects</span>
+								<span class="font-weight-bold">Access to .NET features and objects</span>
 									<ul>
+										<li>LINQ</li>
 										<li>Math</li>
 										<li>Regex</li>
-										<li>String.Format</li>
+										<li>String Interpolation</li>
+										<li>Web Service</li>
 									</ul>
 								<span class="font-weight-bold">Evaluate expression at runtime</span>
 									<ul>
-										<li>Use column value as code</li>
+										<li>Use column value as formula</li>
 										<li>Use column value as parameter</li>
-										<li>Perform IO Operation</li>
 									</ul>
-								<span class="font-weight-bold">Replace xp_cmdshell with C# Syntax</span>
+								<span class="font-weight-bold">Perform File Operation</span>
 									<ul>
-										<li>DirectoryInfo</li>
-										<li>FileInfo</li>
-										<li>Impersonate</li>
+										<li>Replace xp_cmdshell with C# Syntax</li>
+										<li>Use DirectoryInfo, FileInfo</li>
+										<li>Impersonate context</li>
 									</ul>
-								<span class="font-weight-bold">Function Improvment</span>
+								<span class="font-weight-bold">T-SQL Function Enhancement</span>
 									<ul>
+										<li>Error Handling (Try/Catch)</li>
+										<li>Call stored procedure</li>
 										<li>Modify Table State</li>
-										<li>Try/Catch Error Handling</li>
+										<li>Run dynamic SQL</li>
 									</ul>
 							</div>
 							<div class="text-center hidden-lg-down">
