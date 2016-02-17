@@ -127,27 +127,11 @@ EXEC Select_Switch 4, 2, 3
 							<h3>SQL Server Regex</h3>
 							<p>Use regular expression to search, replace and split text in SQL</p>
 {% highlight sql %}
-CREATE FUNCTION [dbo].[fn_Split]
-    (
-      @input VARCHAR(MAX) ,
-      @pattern VARCHAR(8000) = ','
-    )
-RETURNS @split TABLE ( item VARCHAR(8000) )
-BEGIN
-    DECLARE @regex_split SQLNET = SQLNET::New('Regex.Split(input, pattern)')
-                                         .ValueString('input', @input)
-                                         .ValueString('pattern', @pattern)
+DECLARE @s VARCHAR(MAX) = '1, 2, 3; 4; 5'
+DECLARE @sqlnet SQLNET = SQLNET::New('Regex.Split(input, ",|;")')
 
-    INSERT  INTO @split
-        SELECT  CAST(Value_1 AS VARCHAR(8000))
-        FROM    [dbo].[SQLNET_EvalTVF_1](@regex_split)
-    RETURN
-END
-
-GO
-
--- SPLIT with multiple delimiters (',' and ';')
-SELECT * FROM dbo.fn_Split('1, 2, 3; 4; 5', ',|;')
+SELECT  *
+FROM    dbo.SQLNET_EvalTVF_1(@sqlnet.ValueString('input', @s))
 {% endhighlight %}
 							<hr class="m-y-md" />
 							<h3>SQL Server File Operation</h3>
