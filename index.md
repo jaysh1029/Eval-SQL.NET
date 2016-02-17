@@ -68,9 +68,9 @@ INSERT  INTO @tableFormula VALUES ('x+y*z', 1, 2, 3 ),
 -- SELECT 7
 -- SELECT 9
 SELECT SQLNET::New(Formula)
-              .Val('x', X)
-              .Val('y', Y)
-              .Val('z', Z).EvalInt()
+              .ValueInt('x', X)
+              .ValueInt('y', Y)
+              .ValueInt('z', Z).EvalInt()
 FROM @tableFormula
 {% endhighlight %}	
 							</div>
@@ -109,7 +109,7 @@ switch(x)
     case 3: return y * z;
     default: return Convert.ToInt32(y ^^ z); // Pow
 }
-   ').Val('x', @x).Val('y', @y).Val('z', @z).EvalInt()
+   ').ValueInt('x', @x).ValueInt('y', @y).ValueInt('z', @z).EvalInt()
 
     SELECT  @result
 END
@@ -136,7 +136,7 @@ RETURNS @split TABLE ( item VARCHAR(8000) )
 BEGIN
     DECLARE @regex_split SQLNET = SQLNET::New('Regex.Split(input, pattern)')
                                          .ValueString('input', @input)
-                                         .Val('pattern', @pattern)
+                                         .ValueString('pattern', @pattern)
 
     INSERT  INTO @split
         SELECT  CAST(Value_1 AS VARCHAR(8000))
