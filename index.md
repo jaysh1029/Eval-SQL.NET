@@ -7,10 +7,10 @@ layout: post
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="description" content="SQL Eval Function | Evaluate C# code and expression in T-SQL stored procedure, function and trigger.">
+		<meta name="description" content="Dramatically improve query performance and overcome SQL limitations with Eval Function">
 		<meta name="keywords" content="Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime, .NET, dotnet, C#, CSharp, VB, Stored Procedure, Procedure, Function, Trigger, SQL">
 		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
-		<title>SQL Eval Function | Evaluate C# code and expression in T-SQL stored procedure, function and trigger.</title>
+		<title>SQL Eval Function | Improve SQL Server query performance and dynamically evaluate expression using C# syntax.</title>
 		<link rel="icon" type="image/png" href="http://eval-sql.net/images/logo.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -43,8 +43,8 @@ layout: post
 					<div class="col-lg-6">
 						<div class="card">
 							<div class="card-block">
-								<h1 class="card-title">Eval SQL.NET</h1>
-								<h3>Evaluate C# code and expression in T-SQL stored procedure, function and trigger</h3>
+								<h3 class="card-title">Eval SQL.NET</h1>
+								<h1>Dramatically improve query performance and overcome SQL limitations with Eval Function</h3>
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
@@ -556,10 +556,10 @@ header .card {
 	border: none;
 	color: #f1f1f1;
 }
-header .card h1 {
+header .card h3 {
 	font-size: 3.0rem;
 }
-header .card h3 {
+header .card h1 {
 	font-size: 1.3rem;
 }
 header .card hr {
