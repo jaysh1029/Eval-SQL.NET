@@ -43,8 +43,8 @@ layout: post
 					<div class="col-lg-6">
 						<div class="card">
 							<div class="card-block">
-								<h3 class="card-title">Eval SQL.NET</h1>
-								<h1>Dramatically improve query performance and overcome SQL limitations with Eval Function</h3>
+								<h3 class="card-title">Eval SQL.NET</h3>
+								<h1>Dramatically improve query performance and overcome SQL limitations with Eval Function</h1>
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
