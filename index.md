@@ -86,15 +86,63 @@ FROM @tableFormula
 		<!-- features !-->
 		<div id="feature">
 			<div class="container">
+			
+				<!-- Improve Performance !-->
+				<h2>Improve Performance</h2>
 				<div class="row">
+					<div class="col-lg-5">
+						<p class="feature-tagline">Stop using slow user-defined function (UDF) and table-valued function (TVF) and dramatically improve query performance.</p>
+						<ul>
+							<li>Make your query run faster</li>
+							<li>Make your application respond better</li>
+							<li>Make your client happier</li>
+						</ul>						
+					</div>
 					<div class="col-lg-7">
-						<!-- anchor !-->
-						<a id="eval" href="#"></a>
-						<h2>Overview</h2>
-						<hr class="m-y-md" />
-						<div class="block-code">
-							<h3>SQL Server Eval</h3>
-							<p>Dynamically evaluate arithmetic operation and expression in SQL</p>
+						<table class="table table-striped table-hover" style="background-color: white;">
+							<tr class="thead-inverse">
+								<th>Methods</th>
+								<th>1,000 Rows</th>
+								<th>10,000 Rows</th>
+								<th>100,000 Rows</th>
+								<th>1,000,000 Rows</th>
+							</tr>
+							<tr>
+								<th>Eval SQL.NET</th>
+								<td>4 ms</td>
+								<td>13 ms</td>
+								<td>160 ms</td>
+								<td>1,650 ms</td>
+							</tr>
+							<tr>
+								<th>fn_split (TVF)</th>
+								<td>100 ms</td>
+								<td>625 ms</td>
+								<td>5,500 ms</td>
+								<td>55,000 ms</td>
+							</tr>
+						</table>
+						
+						<p>* Benchmark to split a text with a delimiter</p>
+					</div>
+				</div>
+			
+			
+				<hr class="m-y-md" />
+				
+				<!-- Dynamic Expression !-->
+				<h2>Dynamic Expression</h2>
+				<div class="row">
+					<div class="col-lg-5">
+						<p class="feature-tagline">Make the impossible now possible. Evaluate C# expression in SQL to overcome limitations.</p>
+						<ul>
+							<li>Allow trusted user to create report field and filter</li>
+							<li>Consume Web Service</li>
+							<li>Replace text template with String Interpolation</li>
+						</ul>
+
+					</div>
+					<div class="col-lg-7">
 {% highlight sql %}
 CREATE PROCEDURE [dbo].[Select_Switch] @x INT, @y INT, @z INT
 AS
@@ -123,9 +171,26 @@ EXEC Select_Switch 3, 2, 3
 -- RETURN 8
 EXEC Select_Switch 4, 2, 3
 {% endhighlight %}
-							<hr class="m-y-md" />
-							<h3>SQL Server Regex</h3>
-							<p>Use regular expression to search, replace and split text in SQL</p>
+					</div>
+				</div>
+				
+				<hr class="m-y-md" />
+				
+				<!-- Regular Expression !-->
+				<h2>Regular Expression</h2>
+				<div class="row">
+					<div class="col-lg-5">
+						<p class="feature-tagline">Use Regex flexibility to overcome “LIKE” and “PATHINDEX” limitations.</p>
+						<ul>
+							<li>IsMatch</li>
+							<li>Match</li>
+							<li>Matches</li>
+							<li>Replace</li>
+							<li>Split</li>
+						</ul>
+
+					</div>
+					<div class="col-lg-7">
 {% highlight sql %}
 DECLARE @s VARCHAR(MAX) = '1, 2, 3; 4; 5'
 DECLARE @sqlnet SQLNET = SQLNET::New('Regex.Split(input, ",|;")')
@@ -133,9 +198,24 @@ DECLARE @sqlnet SQLNET = SQLNET::New('Regex.Split(input, ",|;")')
 SELECT  *
 FROM    dbo.SQLNET_EvalTVF_1(@sqlnet.ValueString('input', @s))
 {% endhighlight %}
-							<hr class="m-y-md" />
-							<h3>SQL Server File Operation</h3>
-							<p>xp_cmdshell alternative to read and write files in SQL</p>
+					</div>
+				</div>
+				
+				<hr class="m-y-md" />
+				
+				<!-- File Operations !-->
+				<h2>File Operations</h2>
+				<div class="row">
+					<div class="col-lg-5">
+						<p class="feature-tagline">Stop compromising your SQL Server by using a more restrictive solution over xp_cmdshell.</p>
+						<ul>
+							<li>Avoid enabling xp_cmdshell</li>
+							<li>Improve server security by impersonating context</li>
+							<li>Improve code readability and maintainability</li>
+						</ul>
+
+					</div>
+					<div class="col-lg-7">
 {% highlight sql %}
 -- REQUIRE EXTERNAL_ACCESS permission
 DECLARE @sqlnet SQLNET = SQLNET::New('
@@ -149,53 +229,9 @@ return dir.GetFiles("*.*").Select(x => x.FullName)
 -- SELECT * FROM DesktopFiles ORDER BY File.Fullname
 EXEC dbo.SQLNET_EvalResultSet @sqlnet
 {% endhighlight %}
-						</div>
-						<div class="text-center hidden-lg-up">
-							<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
-						</div>
-					</div>
-					<div class="col-lg-4 col-lg-push-1">
-						<h2>Main Features</h2>
-						<hr class="m-y-md" />
-						<div>
-							<p>Extend SQL with the full C# Syntax and get the best of both languages:</p>
-							<div class="feature-list">
-								<span class="font-weight-bold">Access to .NET features and objects</span>
-									<ul>
-										<li>LINQ</li>
-										<li>Math</li>
-										<li>Regex</li>
-										<li>String Interpolation</li>
-										<li>Web Service</li>
-									</ul>
-								<span class="font-weight-bold">Evaluate expression at runtime</span>
-									<ul>
-										<li>Use column value as formula</li>
-										<li>Use column value as parameter</li>
-									</ul>
-								<span class="font-weight-bold">Perform File Operation</span>
-									<ul>
-										<li>Replace xp_cmdshell with C# Syntax</li>
-										<li>Use DirectoryInfo, FileInfo</li>
-										<li>Impersonate context</li>
-									</ul>
-								<span class="font-weight-bold">T-SQL Function Enhancement</span>
-									<ul>
-										<li>Error Handling (Try/Catch)</li>
-										<li>Call stored procedure</li>
-										<li>Modify Table State</li>
-										<li>Run dynamic SQL</li>
-									</ul>
-							</div>
-							<div class="text-center hidden-lg-down">
-								<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
-							</div>
-							<div class="text-center hidden-lg-up">
-								<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-SQL.NET" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
-							</div>
-						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 		
@@ -209,14 +245,12 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 					<div class="col-lg-6">
 						<h2>Pricing</h2>
 						<hr class="m-y-md" />
-							<p>Unlock a new world of possibilities by extending SQL language with C# syntax.</p>
-							<ul>
-								<li>Dynamic arithmetic expression</li>
-								<li>Regular Expression</li>
-								<li>String Interpolation</li>
-								<li>Web Service</li>
-								<li>Any C# code but within T-SQL!</li>
-							</ul>
+						<p class="pricing-tagline">Transform SQL limitations problem into solution and add capability and flexibility to SQL</p>
+						<ul>
+							<li>Easy to use syntax</li>
+							<li>Easy to learn API</li>
+							<li>Improved performance over UDF & TVF</li>
+						</ul>
 						<hr class="m-y-md" />
 						<p>Every month, a <a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>
 						<hr class="m-y-md hidden-lg-up" />
@@ -607,24 +641,30 @@ header .card .card-code .highlight pre {
 
 /* feature */
 #feature h2 {
-	font-size: 42px;
+	font-size: 48px;
 	letter-spacing: 4px;
 	padding-top: 60px;
+	padding-bottom: 30px;
 }
 #feature h3 {
 	letter-spacing: 1px;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 700;
+	padding-top: 10px;
 }
-#feature .btn {
-	margin-top: 40px;
+
+#feature hr {
+	margin-top: 60px;
 }
-#feature .hidden-lg-down .btn  {
-	margin-top: 10px;
+
+#feature ul li {
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-#feature .feature-list li {
-	padding-bottom: 3px;
-	padding-top: 3px;
+
+#feature .feature-tagline {
+	font-style: italic;
 }
 
 @media (min-width: 62em) {
@@ -639,6 +679,9 @@ header .card .card-code .highlight pre {
 /* pricing */
 #pricing h2 {
 	margin-bottom: -10px;
+}
+#pricing .pricing-tagline {
+	font-style: italic;
 }
 #pricing .free-trial a {
 	font-size: 20px;
