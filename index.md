@@ -95,7 +95,7 @@ FROM @tableFormula
 						<ul>
 							<li>Make your query run faster</li>
 							<li>Make your application respond better</li>
-							<li>Make your client happier</li>
+							<li>Make your customers happier</li>
 						</ul>						
 					</div>
 					<div class="col-lg-7">
