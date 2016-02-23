@@ -232,7 +232,7 @@ var name = nameGetter(customer);
 				<h2>Replace xp_cmdshell with restrictive alternative</h2>
 				<div class="row">
 					<div class="col-lg-5">
-						<p class="feature-tagline">Avoid enabling xp_cmdshell and compromising your SQL Server and use instead a more <span class="text-bold-red">restrictive</a> solution.</p>
+						<p class="feature-tagline">Avoid enabling xp_cmdshell and compromising your SQL Server and use instead a more <span class="text-bold-red">restrictive</span> solution.</p>
 						<ul>
 							<li>Impersonate Context</li>
 							<li>Improve maintainability</li>
