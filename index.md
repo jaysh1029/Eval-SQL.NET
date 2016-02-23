@@ -156,7 +156,7 @@ FROM @tableFormula
 						</ul>
 					</div>
 					<div class="col-lg-7">
-{% highlight csharp %}
+{% highlight sql %}
 // Anonymous Type
 int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2} );
 
@@ -191,7 +191,7 @@ int result = Eval.Execute<int>("{0} + {1}", 1, 2);
 						</ul>
 					</div>
 					<div class="col-lg-7">
-{% highlight csharp %}
+{% highlight sql %}
 int result = Eval.Execute<int>(@"
 var list = new List<int>() { 1, 2, 3, 4, 5 };
 return list.Where(x => x > X).Take(Y).Count();
@@ -216,7 +216,7 @@ return list.Where(x => x > X).Take(Y).Count();
 						</ul>					
 					</div>
 					<div class="col-lg-7">
-{% highlight csharp %}
+{% highlight sql %}
 var customer = new Customer() { Name = "ZZZ" };
 
 var nameGetter = Eval.Compile<Func<Customer, string>>("x.Name", "x");
@@ -241,7 +241,7 @@ var name = nameGetter(customer);
 						</ul>						
 					</div>
 					<div class="col-lg-7">
-{% highlight csharp %}
+{% highlight sql %}
 var customer = new Customer() { Name = "ZZZ" };
 
 var nameGetter = Eval.Compile<Func<Customer, string>>("x.Name", "x");
@@ -332,7 +332,7 @@ var name = nameGetter(customer);
 						</ul>
 						<p class="pricing-tagline">SQL developer are waited so long to get an Eval function, it's now possible and easy to perform all dynamic operations.</p>
 						<hr class="m-y-md" />
-						<p>Every month, a <a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>						
+						<p>Every month, a <a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>						
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
