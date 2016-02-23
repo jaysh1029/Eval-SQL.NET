@@ -167,7 +167,7 @@ expandoObject.Y = 2;
 int result = Eval.Execute<int>("X + Y", expandoObject);
 
 // Dictionary Key
-var values = new Dictionary<string, object>() {{"X", 1}, {"Y", 2}};
+var values = new Dictionary<string, object>() { {"X", 1}, {"Y", 2} };
 int result = Eval.Execute<int>("X + Y", values);
 
 // Argument Position
