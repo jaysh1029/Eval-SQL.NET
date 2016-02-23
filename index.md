@@ -92,8 +92,8 @@ FROM @tableFormula
 					<div class="col-lg-5">
 						<p class="featured-tagline">Avoid using slow user-defined function (UDF) and table-valued function (TVF) and dramatically improve query performance with Eval SQL.NET.</p>
 						<ul class="featured-list-sm">
-							<li>Execute SQL 3-20x faster than UDF and TVF</li>
-							<li>Evaluate an expression more than ONE MILLION times under a second</li>
+							<li>Execute SQL <span class="text-bold-red">3-20x faster</span> than UDF and TVF</li>
+							<li>Evaluate an expression more than <span class="text-bold-red">ONE MILLION</span> times under a second</li>
 							<li>Evaluate expression using C# Syntax</li>
 						</ul>
 					</div>
@@ -157,21 +157,17 @@ FROM @tableFormula
 					</div>
 					<div class="col-lg-7">
 {% highlight sql %}
-// Anonymous Type
-int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2} );
+-- CREATE test
+DECLARE @table TABLE ( X INT, Y INT, Z INT )
+INSERT  INTO @table VALUES  ( 2, 4, 6 ),  ( 3, 5, 7 ), ( 4, 6, 8 )
 
-// Class Member
-dynamic expandoObject = new ExpandoObject();
-expandoObject.X = 1;
-expandoObject.Y = 2;
-int result = Eval.Execute<int>("X + Y", expandoObject);
-
-// Dictionary Key
-var values = new Dictionary<string, object>() { {"X", 1}, {"Y", 2} };
-int result = Eval.Execute<int>("X + Y", values);
-
-// Argument Position
-int result = Eval.Execute<int>("{0} + {1}", 1, 2);
+-- Result: 14, 22, 32
+DECLARE @sqlnet SQLNET = SQLNET::New('x*y+z')
+SELECT  @sqlnet.ValueInt('x', X)
+               .ValueInt('y', Y)
+               .ValueInt('z', Z)
+               .EvalInt()
+FROM    @table
 {% endhighlight %}
 					</div>
 				</div>
@@ -192,9 +188,18 @@ int result = Eval.Execute<int>("{0} + {1}", 1, 2);
 					</div>
 					<div class="col-lg-7">
 {% highlight sql %}
-int result = Eval.Execute<int>(@"
-var list = new List<int>() { 1, 2, 3, 4, 5 };
-return list.Where(x => x > X).Take(Y).Count();
+-- CREATE test
+DECLARE @t TABLE (Id INT , Input VARCHAR(MAX))
+INSERT  INTO @t VALUES  ( 1, '1, 2, 3; 4; 5' ), ( 2, '6;7,8;9,10' )
+
+-- SPLIT with many delimiters: ',' and ';'
+DECLARE @sqlnet SQLNET = SQLNET::New('Regex.Split(input, ",|;")')
+
+SELECT  *
+FROM    @t AS A
+        CROSS APPLY ( SELECT    *
+                      FROM      dbo.SQLNET_EvalTVF_1(@sqlnet.ValueString('input', Input))
+                    ) AS B
 {% endhighlight %}	
 					</div>
 				</div>
@@ -217,10 +222,18 @@ return list.Where(x => x > X).Take(Y).Count();
 					</div>
 					<div class="col-lg-7">
 {% highlight sql %}
-var customer = new Customer() { Name = "ZZZ" };
+DECLARE @customer TABLE ( Email VARCHAR(255) )
 
-var nameGetter = Eval.Compile<Func<Customer, string>>("x.Name", "x");
-var name = nameGetter(customer);
+INSERT  INTO @customer
+VALUES  ( 'info@zzzprojects.com' ),
+        ( 'invalid.com' ),
+        ( 'sales@zzzprojects.com' )
+
+DECLARE @valid_email SQLNET = SQLNET::New('Regex.IsMatch(email, 
+@"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$")')
+
+-- SELECT 'invalid.com'
+SELECT * FROM @customer WHERE @valid_email.ValueString('email', Email).EvalBit() = 0
 {% endhighlight %}	
 					</div>
 				</div>	
@@ -242,10 +255,18 @@ var name = nameGetter(customer);
 					</div>
 					<div class="col-lg-7">
 {% highlight sql %}
-var customer = new Customer() { Name = "ZZZ" };
+-- REQUIRE EXTERNAL_ACCESS permission
+DECLARE @sqlnet SQLNET = SQLNET::New('
+string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 
-var nameGetter = Eval.Compile<Func<Customer, string>>("x.Name", "x");
-var name = nameGetter(customer);
+var dir = new DirectoryInfo(path);
+return dir.GetFiles("*.*")
+          .Select(x => new { x.FullName, FileContent = File.ReadAllText(x.FullName) })
+          .OrderBy(x => x.FullName)')
+          .Impersonate()
+
+-- SELECT FullName, FileContext FROM DesktopFiles ORDER BY Fullname
+EXEC dbo.SQLNET_EvalResultSet @sqlnet
 {% endhighlight %}	
 					</div>
 				</div>	
