@@ -175,7 +175,7 @@ FROM    @table
 				<hr class="m-y-md" />
 				
 				<!-- Split text with delimiter !-->
-				<a id="execute-dynamic-string-code" href="#"></a>
+				<a id="split-text-with-delimiter" href="#"></a>
 				<h2>Split text with delimiter</h2>
 				<div class="row">
 					<div class="col-lg-5">
