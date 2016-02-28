@@ -12,7 +12,7 @@ layout: post
 		<!-- seo !-->
 		<meta name="description" content="Dramatically improve query performance and overcome SQL limitations with Eval Function">
 		<meta name="keywords" content="Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime, .NET, dotnet, C#, CSharp, VB, Stored Procedure, Procedure, Function, Trigger, SQL">
-		<title>SQL Eval Function | Improve SQL Server query performance and dynamically evaluate expression using C# syntax.</title>
+		<title>SQL Eval Function | Improve SQL Server query performance and dynamically evaluate expression using C# syntax. | Fast SQL Arithmetic, Math and Regular Expression Evaluator.</title>
 		
 		<!-- icon/css !-->
 		<link rel="icon" type="image/png" href="http://entityframework-plus.net/images/logo.png">
@@ -46,7 +46,7 @@ layout: post
 							<div class="card-block">
 								<h3 class="card-title">Eval SQL.NET</h3>
 								<hr class="m-y-md" />
-								<h1>Dramatically improve query performance and overcome SQL limitations with Eval Function</h1>
+								<h1>Dramatically Improve Query Performance and Overcome SQL limitations with Eval Function</h1>
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank" class="btn btn-success btn-lg btn-left" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
