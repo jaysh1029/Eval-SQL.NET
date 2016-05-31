@@ -19,20 +19,164 @@ layout: post
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="http://entityframework-plus.net/css/github2.css">
-		<link rel="stylesheet" type="text/css" href="http://entityframework-plus.net/css/default.css">
+		<link rel="stylesheet" type="text/css" href="http://entityframework-plus.net/css/default.1.3.css">
 	</head>
 	
 	<body>
-  
-		<!-- top-header !-->
-		<div id="top-header">
+		
+		<!-- top-navbar !-->
+		<nav id="top-navbar" class="navbar hidden-md-down">
+			<div class="container-fluid">
+			
+				<!-- navbar-nav-product !-->
+				<ul class="nav navbar-nav navbar-nav-product">
+					<li class="nav-item">
+						<a href="#" class="nav-link navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#top-product"><img src="http://entityframework-plus.net/images/logo.png" height="40" />&nbsp;Products&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+				
+				<!-- navbar-nav-share !-->				
+				<ul class="nav navbar-nav pull-xs-right navbar-nav-share">
+					<li class="nav-item">
+						<a href="mailto:info@zzzprojects.com"><i class="fa fa-envelope"></i>&nbsp;&nbsp;info@zzzprojects.com</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
+					</li>
+					<li class="nav-item">
+						<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
+					</li>
+					<li class="nav-item">
+						<a href="https://plus.google.com/+Zzzprojects_NetSQL" target="_blank"><i class="fa fa-google-plus"></i></a>
+					</li>				
+					<li class="nav-item">
+						<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank" class="hidden-xs-down"><i class="fa fa-newspaper-o"></i></a>
+					</li>
+				</ul>
+				
+			</div>
+		</nav>
+		
+		<!-- top-product !-->
+		<div id="top-product" class="collapse hidden-md-down">
 			<div class="container">
-				<div class="text-right">
-					<a href="mailto:info@zzzprojects.com"><i class="fa fa-envelope"></i>&nbsp;&nbsp;info@zzzprojects.com</a>
-					<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
-					<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
-					<a href="https://plus.google.com/+Zzzprojects_NetSQL" target="_blank"><i class="fa fa-google-plus"></i></a>
-					<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank" class="hidden-xs-down"><i class="fa fa-newspaper-o"></i></a>
+				<div class="row">
+					<div class="col-lg-3">
+						<h3>Entity Framework</h3>
+						<ul>
+							<li><a href="http://entityframework-extensions.net/" target="_blank">Entity Framework Extensions</a></li>
+							<li><a href="http://entityframework-plus.net/" target="_blank">Entity Framework Plus (EF+)</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<h3>Bulk Operations</h3>
+						<ul>
+							<li><a href="http://bulk-operations.net/" target="_blank">Bulk Operations</a></li>
+							<li><a href="http://dapper-plus.net/" target="_blank">Dapper Plus</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<h3>Expression Evaluator</h3>
+						<ul>
+							<li><a href="http://eval-expression.net/" target="_blank">Eval Expression.NET</a></li>
+							<li><a href="http://eval-sql.net/" target="_blank">Eval SQL.NET</a></li>								
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<h3>Others</h3>
+						<ul>
+							<li><a href="https://github.com/zzzprojects/Z.ExtensionMethods" target="_blank">Extension Methods</a></li>
+							<li><a href="https://github.com/zzzprojects/LINQ-Async" target="_blank">LINQ Async</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<!-- menu !-->
+		<nav id="menu" class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10 col-lg-12">
+						<!-- navbar-bar-header !-->
+						<ul class="nav navbar-nav navbar-nav-header">
+							<li class="nav-item">
+								<h1>Eval SQL.NET</h3>
+								<small>SQL Eval Function</small>
+								</h1>
+							</li>
+						</ul>
+						
+						<!-- navbar-bar-menu !-->
+						<ul class="nav navbar-nav pull-xs-right navbar-nav-menu hidden-md-down">
+							<li class="nav-item">
+								<a class="nav-link" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" target="_blank">Wiki</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://github.com/zzzprojects/Eval-SQL.NET/issues" target="_blank">Forum</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#pro">PRO Version</a>
+							</li>
+							<li class="nav-item">
+								<a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank" class="btn btn-success" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download"></i>&nbsp;<span>Download</span></span></a>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="col-xs-2">
+						<!-- navbar-bar-menu-mobile !-->
+						<ul class="nav navbar-nav pull-xs-right hidden-lg-up navbar-bar-menu-mobile">
+							<li class="nav-item">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-mobile">&#9776;</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<div id="menu-mobile" class="collapse hidden-lg-up">
+			<div class="container">
+				<br />
+				<div class="row">
+					<div class="col-lg-3">			
+						<h3>Menu</h3>
+						<ul>
+							<li><a class="nav-link" href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" target="_blank">Wiki</a></li>
+							<li><a class="nav-link" href="https://github.com/zzzprojects/Eval-SQL.NET/issues" target="_blank">Forum</a></li>
+							<li><a class="nav-link" href="#pro">PRO Version</a></li>
+							<li><a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank" class="btn btn-success" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download"></i>&nbsp;<span>Download</span></span></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<h3>Entity Framework</h3>
+						<ul>
+							<li><a href="http://entityframework-extensions.net/" target="_blank">Entity Framework Extensions</a></li>
+							<li><a href="http://entityframework-plus.net/" target="_blank">Entity Framework Plus (EF+)</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<h3>Bulk Operations</h3>
+						<ul>
+							<li><a href="http://bulk-operations.net/" target="_blank">Bulk Operations</a></li>
+							<li><a href="http://dapper-plus.net/" target="_blank">Dapper Plus</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<h3>Expression Evaluator</h3>
+						<ul>
+							<li><a href="http://eval-expression.net/" target="_blank">Eval Expression.NET</a></li>
+							<li><a href="http://eval-sql.net/" target="_blank">Eval SQL.NET</a></li>								
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<h3>Others</h3>
+						<ul>
+							<li><a href="https://github.com/zzzprojects/Z.ExtensionMethods" target="_blank">Extension Methods</a></li>
+							<li><a href="https://github.com/zzzprojects/LINQ-Async" target="_blank">LINQ Async</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -44,20 +188,20 @@ layout: post
 					<div class="col-lg-6">
 						<div class="card">
 							<div class="card-block">
-								<h3 class="card-title">Eval SQL.NET</h3>
 								<hr class="m-y-md" />
-								<h1>Dramatically Improve Query Performance and Overcome SQL limitations with Eval Function</h1>
+								<h2>Evaluate C# Code Dynamically in T-SQL</h2>
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank" class="btn btn-success btn-lg btn-left" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
-									<a href="https://github.com/zzzprojects/Eval-SQL.NET" target="_blank" class="btn btn-primary btn-lg btn-right" role="button" onclick="ga('send', 'event', { eventAction: 'github'});"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
-									<p class="text-muted">* FREE Version limited to 50 characters</p>						
+									<br />		
+									<div class="text-muted">* PRO Version unlocked for the current month</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6">
 						<div class="card">
+							<br />
 							<div class="card-block card-code">
 {% highlight sql %}
 -- Evaluate dynamically expression in T-SQL
@@ -74,7 +218,7 @@ SELECT SQLNET::New(Formula)
               .ValueInt('y', Y)
               .ValueInt('z', Z).EvalInt()
 FROM @tableFormula
-{% endhighlight %}	
+{% endhighlight %}		
 							</div>
 						</div>
 					</div>
@@ -98,7 +242,7 @@ FROM @tableFormula
 						</ul>
 					</div>
 					<div class="col-lg-7">
-						<table class="table table-striped table-hover" style="background-color: white;">
+						<table class="table table-striped table-hover table-responsive" style="background-color: white;">
 							<tr class="thead-inverse">
 								<th>Methods</th>
 								<th>1,000 Rows</th>
@@ -131,19 +275,22 @@ FROM @tableFormula
 		<!-- testimonials !-->
 		<div id="testimonials">
 			<div class="container">
-				<h2>Amazing <span class="text-bold-red">performance</span>, unmatched <span class="text-bold-red">flexibility</span>, outstanding <span class="text-bold-red">support</span>!</h2>
+				<h2>Amazing <span class="text-bold-red">performance</span>, outstanding <span class="text-bold-red">support</span>!</h2>
 				<ul>
-					<li>- "We were very, very pleased with the customer support. There was no question, problem or wish, that was not answered AND solved within days! We think that’s very unique!" Klemens Stelzmüller, <a href="http://www.beka-software.at/" target="_blank">Beka-software</a></li>
-					<li>- "I’d definitely recommend it, as it is a great product with a great performance and reliability." Eric Rey, <a href="http://www.transturcarrental.com/" target="_blank">Transtur</a></li>
+					<li>- "We were very, very pleased with the customer support. There was no question, problem or wish that was not answered AND solved within days! We think that’s very unique!" Klemens Stelzmüller, <a href="http://www.beka-software.at/" target="_blank">Beka-software</a></li>
+					<li>- "I’d definitely recommend it as it is a great product with a great performance and reliability." Eric Rey, <a href="http://www.transturcarrental.com/" target="_blank">Transtur</a></li>
 				</ul>
-				<p><span class="text-bold-red">Share</span> your experience, we love to hear from you: <a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a></p>
+				<p><a href="http://www.zzzprojects.com/testimonials/" target="_blank" class="btn btn-primary btn-lg" role="button"><span><i class="fa fa-comments"></i>&nbsp;<span>Read More Success Story</span></span></a></p>
+				<br /><br />
+				<p><span class="text-bold-red">Share</span> your experience. We love to hear from you: <a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a></p>
 			</div>
 		</div>
 		
 		<!-- features !-->
 		<div id="feature">
 			<div class="container">
-				<!-- Evaluate dynamic arithmetic/math expression in SQL!-->
+				
+			<!-- Evaluate dynamic arithmetic/math expression in SQL!-->
 				<a id="evaluate-dynamic-arithmetic-math-expression-in-sql" href="#"></a>
 				<h2>Evaluate dynamic arithmetic/math expression in SQL</h2>
 				<div class="row">
@@ -270,6 +417,10 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 {% endhighlight %}	
 					</div>
 				</div>	
+				
+				<!-- more-feature !-->
+				<p class="more-feature"><a href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" target="_blank" class="btn btn-primary btn-lg" role="button"><span><i class="fa fa-book"></i>&nbsp;<span>View More Features</span></span></a></p>
+				
 			</div>
 		</div>
 		
@@ -277,7 +428,7 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 		<a id="supports" href="#"></a>
 		<div id="support">
 			<div class="container">
-				<h2>Test our outstanding Support</h2>
+				<h2>Test our <span class="text-bold-red">Outstanding</span> Support</h2>
 				<h3>We usually answer within the next business day, hour, or minutes!</h3>
 				<div class="row">
 					<hr class="hidden-sm-up" />
@@ -288,7 +439,7 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 							</div>
 							<a href="mailto:info@zzzprojects.com"><i class="fa fa-users fa-5x"></i></a>
 							<div class="card-block">
-								<p class="card-text">Email our team for any type of questions. We love to hear from you!</p>
+								<p class="card-text">Email our team for any questions. We love to hear from you!</p>
 								<a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a>
 							</div>
 						</div>
@@ -297,12 +448,12 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 					<div class="col-sm-6 col-lg-3">
 						<div class="card">
 							<div class="card-block">
-								<h4 class="card-title">Documentation</h4>
+								<h4 class="card-title">Wiki</h4>
 							</div>
 							<a href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});"><i class="fa fa-folder-open fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Consult our complete documentation to help you getting started.</p>
-								<a href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});">Documentation</a>
+								<a href="https://github.com/zzzprojects/Eval-SQL.NET/wiki" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});">Wiki</a>
 							</div>
 						</div>
 					</div>
@@ -314,7 +465,7 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 							</div>
 							<a href="https://github.com/zzzprojects/Eval-SQL.NET/issues" target="_blank" onclick="ga('send', 'event', { eventAction: 'forum'});"><i class="fa fa-weixin fa-5x"></i></a>
 							<div class="card-block">
-								<p class="card-text">Visit the forum to propose new features or to discuss about the library.</p>
+								<p class="card-text">Visit the forum to report issues, ask questions, and propose new features.</p>
 								<a href="https://github.com/zzzprojects/Eval-SQL.NET/issues" target="_blank" onclick="ga('send', 'event', { eventAction: 'forum'});">Forum</a>
 							</div>
 						</div>
@@ -351,7 +502,7 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 							<li>Increase <span class="text-bold-red">maintainability</span> over complex SQL</li>
 							<li>Increase <span class="text-bold-red">readability</span> over complex SQL</li>
 						</ul>
-						<p class="pricing-tagline">SQL developer are waited so long to get an Eval function, it's now possible and easy to perform all dynamic operations.</p>
+						<p class="pricing-tagline">SQL developer has waited so long to get an Eval Function. It's now possible and easy to evaluate code dynamically.</p>
 						<hr class="m-y-md" />
 						<p>Every month, a <a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>						
 					</div>
@@ -403,8 +554,9 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 								</label>
 							</div>
 							<button type="submit" class="btn btn-success btn-lg"><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></button>
-							<div><br />* Contact us for invoice or payment method alternative.</div>
-						</form>	
+							<br /><br />
+							<p>* Contact us (<a href="mailto:sales@zzzprojects.com">sales@zzzprojects.com</a>) for <span class="text-bold-red">Quote</span>, payment method <span class="text-bold-red">alternative</span>, or major <span class="text-bold-red">bundle discount</span> when purchasing more than one product (or you already bought one).</p>
+						</form>		
 					</div>
 				</div>
 			</div>
@@ -483,8 +635,8 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 			</div>
 		</footer>
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="http://entityframework-plus.net/js/tether.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://entityframework-plus.net/js/tether.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
