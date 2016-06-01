@@ -541,11 +541,11 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 							<fieldset class="form-group">
 								<input type="hidden" name="on0" value="Seats">
 								<select name="os0" class="form-control">
-									<option value="1 seat">Eval SQL.NET $599 (1 developper seat)</option>
-									<option value="2-4 seats" selected>Eval SQL.NET $799 (2-4 developper seats)</option>
-									<option value="5-9 seats">Eval SQL.NET $999 (5-9 developper seats)</option>
-									<option value="10-14 seats">Eval SQL.NET $1199 (10-14 developper seats)</option>
-									<option value="15-19 seats">Eval SQL.NET $1399 (15-19 developper seats)</option>
+									<option value="1 seat">Eval SQL.NET $599 (1 developer seat)</option>
+									<option value="2-4 seats" selected>Eval SQL.NET $799 (2-4 developer seats)</option>
+									<option value="5-9 seats">Eval SQL.NET $999 (5-9 developer seats)</option>
+									<option value="10-14 seats">Eval SQL.NET $1199 (10-14 developer seats)</option>
+									<option value="15-19 seats">Eval SQL.NET $1399 (15-19 developer seats)</option>
 								</select> 
 							</fieldset>
 							<div class="checkbox">
