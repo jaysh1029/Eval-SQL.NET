@@ -10,7 +10,7 @@ layout: post
 		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
 		
 		<!-- seo !-->
-		<meta name="description" content="Dramatically improve query performance and overcome SQL limitations with Eval Function">
+		<meta name="description" content="Extend SQL with Dynamic Evaluation at Runtime Using C# Expression">
 		<meta name="keywords" content="Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime, .NET, dotnet, C#, CSharp, VB, Stored Procedure, Procedure, Function, Trigger, SQL">
 		<title>SQL Eval Function | Improve SQL Server query performance and dynamically evaluate expression using C# syntax. | Fast SQL Arithmetic, Math and Regular Expression Evaluator.</title>
 		
@@ -101,7 +101,7 @@ layout: post
 						<!-- navbar-bar-header !-->
 						<ul class="nav navbar-nav navbar-nav-header">
 							<li class="nav-item">
-								<h1>Eval SQL.NET</h3>
+								<h1>Eval SQL.NET
 								<small>SQL Eval Function</small>
 								</h1>
 							</li>
@@ -189,7 +189,7 @@ layout: post
 						<div class="card">
 							<div class="card-block">
 								<hr class="m-y-md" />
-								<h2>Evaluate C# Code Dynamically in T-SQL</h2>
+								<h2>Extend SQL with Dynamic Evaluation at Runtime Using C# Expression</h2>
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://github.com/zzzprojects/Eval-SQL.NET/releases" target="_blank" class="btn btn-success btn-lg btn-left" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
