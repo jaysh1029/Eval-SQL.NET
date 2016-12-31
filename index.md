@@ -511,24 +511,20 @@ EXEC dbo.SQLNET_EvalResultSet @sqlnet
 							<thead class="thead-inverse">
 								<tr>
 									<th></th>
-									<th>FREE</th>
 									<th>PRO</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<th>Maximum Characters</th>
-									<td>50</td>
 									<td>Unlimited</td>
 								</tr>
 								<tr>
 									<th>Commercial License</th>
-									<td><i class="fa fa-times fa-2x"></i></td>
 									<td><i class="fa fa-check-square-o fa-2x"></i></td>
 								</tr>
 								<tr>
 									<th>Support & Upgrades (1 year)</th>
-									<td><i class="fa fa-times fa-2x"></i></td>
 									<td><i class="fa fa-check-square-o fa-2x"></i></td>
 								</tr>
 							</tbody>
