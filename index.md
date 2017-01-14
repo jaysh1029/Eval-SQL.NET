@@ -12,7 +12,7 @@ layout: post
 		<!-- seo !-->
 		<meta name="description" content="Extend SQL with Dynamic Evaluation at Runtime Using C# Expression">
 		<meta name="keywords" content="Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime, .NET, dotnet, C#, CSharp, VB, Stored Procedure, Procedure, Function, Trigger, SQL">
-		<title>SQL Eval Function | Improve SQL Server query performance and dynamically evaluate expression using C# syntax. | Fast SQL Arithmetic, Math and Regular Expression Evaluator.</title>
+		<title>SQL Eval Function | SQL CLR Library | Improve SQL Server query performance and dynamically evaluate expression using C# syntax. | Fast SQL Arithmetic, Math and Regular Expression Evaluator.</title>
 		
 		<!-- icon/css !-->
 		<link rel="icon" type="image/png" href="http://entityframework-plus.net/images/logo.png">
